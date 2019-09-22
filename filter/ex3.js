@@ -24,6 +24,12 @@ Sortie attendue:
  */
 
 function keepStarks(names) {
+  const familly = names.filter(function(name) {
+    if (name.endsWith('Stark')) {
+      return name;
+    }
+  })
+  return familly;
 }
 
 // Ne pas modifier l'export

@@ -29,6 +29,12 @@ Sortie attendue:
  */
 
 function filterOnPrice(products, maxPrice) {
+  const goodProduct = products.filter(function(actualProduct) {
+    if (actualProduct.price <= maxPrice) {
+      return actualProduct;
+    }
+  })
+  return goodProduct;
 }
 
 // Ne pas modifier l'export
