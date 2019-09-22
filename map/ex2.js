@@ -43,6 +43,14 @@ En sortie: [
  */
 
 function getFoodCategories(foods) {
+  const chaine = foods.map(function(snack) {
+    if (snack.isVegetarian) {
+      return snack.food + ' is suitable for vegetarians';
+    } else {
+      return snack.food + ' is not suitable for vegetarians'
+    }
+  })
+  return chaine
 }
 
 

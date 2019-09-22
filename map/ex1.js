@@ -22,6 +22,11 @@ En sortie: [
  */
 
 function getStringsLength(strings) {
+  let chaine = strings.map(function(word) {
+    let message = word + ' contains ' + word.length + ' characters';
+    return message;
+  })
+  return chaine;
 }
 
 // Si besoin, tu peux toujours visualiser le résultat avec console.log,
